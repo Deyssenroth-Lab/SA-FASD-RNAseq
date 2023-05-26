@@ -99,17 +99,547 @@ tbl_summary(
   modify_header(label = "**Variable**",
                 all_stat_cols() ~ "**{level}**<br>N = {n} ({style_percent(p, digits=1)}%)") %>%
   bold_labels() %>%
-  modify_caption("<div style='text-align: left; font-weight: bold;'> Table 1. Participant characteristics by exposure status at conception</div>")
+  modify_caption("<div style='text-align: left; font-weight: bold;'> Table 1. Participant characteristics by periconceptional alcohol exposure status</div>")
 
-demo%>%
-  as_gt()
 
 demo%>%
  as_gt() %>% # convert to gt table
   gt::gtsave( # save table as image
     filename = "../Tables/Table1_conc_lowRINrem.png"
   )
+
+knitr::knit_print(demo)
 ```
+
+<div id="jlfnzdtwmq" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#jlfnzdtwmq table {
+  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#jlfnzdtwmq thead, #jlfnzdtwmq tbody, #jlfnzdtwmq tfoot, #jlfnzdtwmq tr, #jlfnzdtwmq td, #jlfnzdtwmq th {
+  border-style: none;
+}
+
+#jlfnzdtwmq p {
+  margin: 0;
+  padding: 0;
+}
+
+#jlfnzdtwmq .gt_table {
+  display: table;
+  border-collapse: collapse;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#jlfnzdtwmq .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#jlfnzdtwmq .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#jlfnzdtwmq .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#jlfnzdtwmq .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#jlfnzdtwmq .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#jlfnzdtwmq .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#jlfnzdtwmq .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#jlfnzdtwmq .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#jlfnzdtwmq .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#jlfnzdtwmq .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#jlfnzdtwmq .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#jlfnzdtwmq .gt_spanner_row {
+  border-bottom-style: hidden;
+}
+
+#jlfnzdtwmq .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+#jlfnzdtwmq .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#jlfnzdtwmq .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#jlfnzdtwmq .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#jlfnzdtwmq .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#jlfnzdtwmq .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#jlfnzdtwmq .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#jlfnzdtwmq .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#jlfnzdtwmq .gt_row_group_first th {
+  border-top-width: 2px;
+}
+
+#jlfnzdtwmq .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#jlfnzdtwmq .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#jlfnzdtwmq .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#jlfnzdtwmq .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#jlfnzdtwmq .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#jlfnzdtwmq .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#jlfnzdtwmq .gt_last_grand_summary_row_top {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: double;
+  border-bottom-width: 6px;
+  border-bottom-color: #D3D3D3;
+}
+
+#jlfnzdtwmq .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#jlfnzdtwmq .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#jlfnzdtwmq .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#jlfnzdtwmq .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#jlfnzdtwmq .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#jlfnzdtwmq .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#jlfnzdtwmq .gt_left {
+  text-align: left;
+}
+
+#jlfnzdtwmq .gt_center {
+  text-align: center;
+}
+
+#jlfnzdtwmq .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#jlfnzdtwmq .gt_font_normal {
+  font-weight: normal;
+}
+
+#jlfnzdtwmq .gt_font_bold {
+  font-weight: bold;
+}
+
+#jlfnzdtwmq .gt_font_italic {
+  font-style: italic;
+}
+
+#jlfnzdtwmq .gt_super {
+  font-size: 65%;
+}
+
+#jlfnzdtwmq .gt_footnote_marks {
+  font-size: 75%;
+  vertical-align: 0.4em;
+  position: initial;
+}
+
+#jlfnzdtwmq .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#jlfnzdtwmq .gt_indent_1 {
+  text-indent: 5px;
+}
+
+#jlfnzdtwmq .gt_indent_2 {
+  text-indent: 10px;
+}
+
+#jlfnzdtwmq .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#jlfnzdtwmq .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#jlfnzdtwmq .gt_indent_5 {
+  text-indent: 25px;
+}
+</style>
+<table class="gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+  <caption><div style='text-align: left; font-weight: bold;'> Table 1. Participant characteristics by periconceptional alcohol exposure status</div>
+</caption>
+  <thead>
+    
+    <tr class="gt_col_headings">
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col" id="&lt;strong&gt;Variable&lt;/strong&gt;"><strong>Variable</strong></th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="&lt;strong&gt;Exposed&lt;/strong&gt;&lt;br&gt;N = 29 (46.8%)&lt;span class=&quot;gt_footnote_marks&quot; style=&quot;white-space:nowrap;font-style:italic;font-weight:normal;&quot;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/span&gt;"><strong>Exposed</strong><br>N = 29 (46.8%)<span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;"><sup>1</sup></span></th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="&lt;strong&gt;Unexposed&lt;/strong&gt;&lt;br&gt;N = 33 (53.2%)&lt;span class=&quot;gt_footnote_marks&quot; style=&quot;white-space:nowrap;font-style:italic;font-weight:normal;&quot;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/span&gt;"><strong>Unexposed</strong><br>N = 33 (53.2%)<span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;"><sup>1</sup></span></th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="&lt;strong&gt;p-value&lt;/strong&gt;&lt;span class=&quot;gt_footnote_marks&quot; style=&quot;white-space:nowrap;font-style:italic;font-weight:normal;&quot;&gt;&lt;sup&gt;2&lt;/sup&gt;&lt;/span&gt;"><strong>p-value</strong><span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;"><sup>2</sup></span></th>
+    </tr>
+  </thead>
+  <tbody class="gt_table_body">
+    <tr><td headers="label" class="gt_row gt_left" style="font-weight: bold;">Maternal age (years)</td>
+<td headers="stat_1" class="gt_row gt_center">29.58 (5.87)</td>
+<td headers="stat_2" class="gt_row gt_center">25.29 (5.27)</td>
+<td headers="p.value" class="gt_row gt_center">0.003</td></tr>
+    <tr><td headers="label" class="gt_row gt_left" style="font-weight: bold;">Maternal education (years)</td>
+<td headers="stat_1" class="gt_row gt_center"></td>
+<td headers="stat_2" class="gt_row gt_center"></td>
+<td headers="p.value" class="gt_row gt_center">0.52</td></tr>
+    <tr><td headers="label" class="gt_row gt_left">    &lt;10th grade</td>
+<td headers="stat_1" class="gt_row gt_center">10    (34.5%)</td>
+<td headers="stat_2" class="gt_row gt_center">14    (42.4%)</td>
+<td headers="p.value" class="gt_row gt_center"></td></tr>
+    <tr><td headers="label" class="gt_row gt_left">    at least 10th grade</td>
+<td headers="stat_1" class="gt_row gt_center">19    (65.5%)</td>
+<td headers="stat_2" class="gt_row gt_center">19    (57.6%)</td>
+<td headers="p.value" class="gt_row gt_center"></td></tr>
+    <tr><td headers="label" class="gt_row gt_left" style="font-weight: bold;">Gestational age (weeks)</td>
+<td headers="stat_1" class="gt_row gt_center">39.32 (1.79)</td>
+<td headers="stat_2" class="gt_row gt_center">39.17 (1.70)</td>
+<td headers="p.value" class="gt_row gt_center">0.92</td></tr>
+    <tr><td headers="label" class="gt_row gt_left" style="font-weight: bold;">Birth weight (grams)</td>
+<td headers="stat_1" class="gt_row gt_center">2,979.31 (535.58)</td>
+<td headers="stat_2" class="gt_row gt_center">3,060.00 (529.37)</td>
+<td headers="p.value" class="gt_row gt_center">0.66</td></tr>
+    <tr><td headers="label" class="gt_row gt_left" style="font-weight: bold;">Infant sex</td>
+<td headers="stat_1" class="gt_row gt_center"></td>
+<td headers="stat_2" class="gt_row gt_center"></td>
+<td headers="p.value" class="gt_row gt_center">0.52</td></tr>
+    <tr><td headers="label" class="gt_row gt_left">    Female</td>
+<td headers="stat_1" class="gt_row gt_center">10    (34.5%)</td>
+<td headers="stat_2" class="gt_row gt_center">14    (42.4%)</td>
+<td headers="p.value" class="gt_row gt_center"></td></tr>
+    <tr><td headers="label" class="gt_row gt_left">    Male</td>
+<td headers="stat_1" class="gt_row gt_center">19    (65.5%)</td>
+<td headers="stat_2" class="gt_row gt_center">19    (57.6%)</td>
+<td headers="p.value" class="gt_row gt_center"></td></tr>
+    <tr><td headers="label" class="gt_row gt_left" style="font-weight: bold;">Parity</td>
+<td headers="stat_1" class="gt_row gt_center"></td>
+<td headers="stat_2" class="gt_row gt_center"></td>
+<td headers="p.value" class="gt_row gt_center">0.31</td></tr>
+    <tr><td headers="label" class="gt_row gt_left">    Nulliparous</td>
+<td headers="stat_1" class="gt_row gt_center">3    (10.3%)</td>
+<td headers="stat_2" class="gt_row gt_center">7    (21.2%)</td>
+<td headers="p.value" class="gt_row gt_center"></td></tr>
+    <tr><td headers="label" class="gt_row gt_left">    Parous</td>
+<td headers="stat_1" class="gt_row gt_center">26    (89.7%)</td>
+<td headers="stat_2" class="gt_row gt_center">26    (78.8%)</td>
+<td headers="p.value" class="gt_row gt_center"></td></tr>
+    <tr><td headers="label" class="gt_row gt_left" style="font-weight: bold;">Avg. daily alcohol (oz)</td>
+<td headers="stat_1" class="gt_row gt_center">0.90 (0.65)</td>
+<td headers="stat_2" class="gt_row gt_center">0.03 (0.12)</td>
+<td headers="p.value" class="gt_row gt_center"><0.001</td></tr>
+    <tr><td headers="label" class="gt_row gt_left" style="font-weight: bold;">Alcohol exposed (pregnancy)</td>
+<td headers="stat_1" class="gt_row gt_center"></td>
+<td headers="stat_2" class="gt_row gt_center"></td>
+<td headers="p.value" class="gt_row gt_center"><0.001</td></tr>
+    <tr><td headers="label" class="gt_row gt_left">    Exposed</td>
+<td headers="stat_1" class="gt_row gt_center">28    (96.6%)</td>
+<td headers="stat_2" class="gt_row gt_center">4    (12.1%)</td>
+<td headers="p.value" class="gt_row gt_center"></td></tr>
+    <tr><td headers="label" class="gt_row gt_left">    Unexposed</td>
+<td headers="stat_1" class="gt_row gt_center">1    (3.4%)</td>
+<td headers="stat_2" class="gt_row gt_center">29    (87.9%)</td>
+<td headers="p.value" class="gt_row gt_center"></td></tr>
+  </tbody>
+  
+  <tfoot class="gt_footnotes">
+    <tr>
+      <td class="gt_footnote" colspan="4"><span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;"><sup>1</sup></span> Mean (SD); n    (%)</td>
+    </tr>
+    <tr>
+      <td class="gt_footnote" colspan="4"><span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;"><sup>2</sup></span> Wilcoxon rank sum test; Pearson’s Chi-squared test; Fisher’s exact test</td>
+    </tr>
+  </tfoot>
+</table>
+</div>
 
 ## create DESeq dataset
 
@@ -452,98 +982,6 @@ dev.off()
 ## conduct differential gene expression analysis including surrogate variables, demographic variables, and cell type as covariates
 
 ``` r
-## pregnancy-wide DEGs adjusted for SVs and demographic variables (no cell type)
-design(ddssva) <- ~ SV1 + SV2 + SV3 + SV4 +SV5 + SV6 + SV7 +  GA_FINAL_rev + sex_r + moage_t0r + heavyexp2021
-
-ddssva<-DESeq(ddssva)
-
-res <- results(ddssva,contrast=c("heavyexp2021","1","0"))
-res<-res[order(res$pvalue),]
-res
-summary(res)
-sum(res$padj < 0.05, na.rm=TRUE) #1
-
-res<-as.data.frame(res)
-
-res<-res%>%
-  rownames_to_column(var="ensembl_gene_id")%>%
-  mutate(ensembl_gene_id=str_remove(ensembl_gene_id,"\\..*"))%>%
-  left_join(gene_symbol_mapping)%>%
-  distinct()
-
-## volcano plot
-res_volcano_05<-res%>%
-  mutate(sig=factor(ifelse(padj < 0.05,"sig","not.sig")))%>%
-  drop_na(padj)%>%
-  ggplot(aes(x=log2FoldChange, y=-log10(padj), colour=sig,label=hgnc_symbol))+
-  geom_point(alpha=0.5) +
-  scale_color_manual(values=c("black", "red")) +
-  geom_text_repel(aes(label=ifelse(padj<0.05,as.character(hgnc_symbol),"")),max.overlaps=20)+
-  geom_hline(yintercept=-log10(0.05), linetype="dashed") +
-  geom_vline(xintercept=c(-1.5, 1.5), linetype="dashed") +
-  labs(x=bquote(~Log[2] ~ "fold change"),y=bquote(~-Log[10] ~ "Adj.P-value"),title="Pregnancy-wide DEGs adjusted for SVs and demographic variables")+
-  theme_bw()+
-  theme(panel.border = element_blank(),
-        axis.line = element_line(color = 'black',size=1),
-        panel.grid.major = element_line(linewidth = (1.2)),
-        panel.grid.minor=element_line(),
-        axis.title=element_text(size=14,face="bold"),
-        axis.text=element_text(size=12),
-        legend.position = "none")
-
-pdf("lowRINrem/Plots/volcano_preg_demo_SV_adj_05.pdf")
-res_volcano_05
-dev.off()
-
-saveRDS(res,"lowRINrem/res_preg_demo_SVs_adj.rds")
-
-
-## pregnancy-wide DEGs adjusted for SVs, demographic variables, and cell type
-design(ddssva) <- ~ SV1 + SV2 + SV3 + SV4 +SV5 + SV6 + SV7 +  GA_FINAL_rev + sex_r + moage_t0r + EVT + CTB + Stromal + Hoffbauer + Endothelial + STB + heavyexp2021
-
-ddssva<-DESeq(ddssva)
-
-res <- results(ddssva,contrast=c("heavyexp2021","1","0"))
-res<-res[order(res$pvalue),]
-res
-summary(res)
-sum(res$padj < 0.05, na.rm=TRUE) #31
-
-res<-as.data.frame(res)
-
-res<-res%>%
-  rownames_to_column(var="ensembl_gene_id")%>%
-  mutate(ensembl_gene_id=str_remove(ensembl_gene_id,"\\..*"))%>%
-  left_join(gene_symbol_mapping)%>%
-  distinct()
-
-## volcano plot
-res_volcano_05<-res%>%
-  mutate(sig=factor(ifelse(padj < 0.05,"sig","not.sig")))%>%
-  drop_na(padj)%>%
-  ggplot(aes(x=log2FoldChange, y=-log10(padj), colour=sig,label=hgnc_symbol))+
-  geom_point(alpha=0.5) +
-  scale_color_manual(values=c("black", "red")) +
-  geom_text_repel(aes(label=ifelse(padj<0.05,as.character(hgnc_symbol),""),hjust=1,vjust=1),max.overlaps = 25)+
-  geom_hline(yintercept=-log10(0.05), linetype="dashed") +
-  geom_vline(xintercept=c(-1.5, 1.5), linetype="dashed") +
-  labs(x=bquote(~Log[2] ~ "fold change"),y=bquote(~-Log[10] ~ "Adj.P-value"), title="Pregnancy-wide DEGs adjusted for SVs, demographic variables and cell type")+
-  theme_bw()+
-  theme(panel.border = element_blank(),
-        axis.line = element_line(color = 'black',linewidth =1),
-        panel.grid.major = element_line(linewidth = (1.2)),
-        panel.grid.minor=element_line(),
-        axis.title=element_text(size=16,face="bold"),
-        axis.text=element_text(size=14),
-        legend.position = "none")
-
-pdf("lowRINrem/Plots/volcano_preg_demo_cell_SV_adj_05.pdf")
-res_volcano_05
-dev.off()
-
-saveRDS(res,"lowRINrem/output/res_preg_demo_cell_SVs_adj.rds")
-
-
 ## periconceptional DEGs adjusted for SVs and demographic variables (no cell type)
 design(ddssva) <- ~ SV1 + SV2 + SV3 + SV4 +SV5 + SV6 + SV7 + GA_FINAL_rev + sex_r + moage_t0r + Exp_Concept_YN
 
@@ -634,6 +1072,99 @@ res_volcano_05
 dev.off()
 
 saveRDS(res,"lowRINrem/output/res_conc_demo_cell_SVs_adj.rds")
+write.csv(res,"lowRINrem/output/SuppTable2.csv")
+
+## pregnancy-wide DEGs adjusted for SVs and demographic variables (no cell type)
+design(ddssva) <- ~ SV1 + SV2 + SV3 + SV4 +SV5 + SV6 + SV7 +  GA_FINAL_rev + sex_r + moage_t0r + heavyexp2021
+
+ddssva<-DESeq(ddssva)
+
+res <- results(ddssva,contrast=c("heavyexp2021","1","0"))
+res<-res[order(res$pvalue),]
+res
+summary(res)
+sum(res$padj < 0.05, na.rm=TRUE) #1
+
+res<-as.data.frame(res)
+
+res<-res%>%
+  rownames_to_column(var="ensembl_gene_id")%>%
+  mutate(ensembl_gene_id=str_remove(ensembl_gene_id,"\\..*"))%>%
+  left_join(gene_symbol_mapping)%>%
+  distinct()
+
+## volcano plot
+res_volcano_05<-res%>%
+  mutate(sig=factor(ifelse(padj < 0.05,"sig","not.sig")))%>%
+  drop_na(padj)%>%
+  ggplot(aes(x=log2FoldChange, y=-log10(padj), colour=sig,label=hgnc_symbol))+
+  geom_point(alpha=0.5) +
+  scale_color_manual(values=c("black", "red")) +
+  geom_text_repel(aes(label=ifelse(padj<0.05,as.character(hgnc_symbol),"")),max.overlaps=20)+
+  geom_hline(yintercept=-log10(0.05), linetype="dashed") +
+  geom_vline(xintercept=c(-1.5, 1.5), linetype="dashed") +
+  labs(x=bquote(~Log[2] ~ "fold change"),y=bquote(~-Log[10] ~ "Adj.P-value"),title="Pregnancy-wide DEGs adjusted for SVs and demographic variables")+
+  theme_bw()+
+  theme(panel.border = element_blank(),
+        axis.line = element_line(color = 'black',size=1),
+        panel.grid.major = element_line(linewidth = (1.2)),
+        panel.grid.minor=element_line(),
+        axis.title=element_text(size=14,face="bold"),
+        axis.text=element_text(size=12),
+        legend.position = "none")
+
+pdf("lowRINrem/Plots/volcano_preg_demo_SV_adj_05.pdf")
+res_volcano_05
+dev.off()
+
+saveRDS(res,"lowRINrem/res_preg_demo_SVs_adj.rds")
+
+
+## pregnancy-wide DEGs adjusted for SVs, demographic variables, and cell type
+design(ddssva) <- ~ SV1 + SV2 + SV3 + SV4 +SV5 + SV6 + SV7 +  GA_FINAL_rev + sex_r + moage_t0r + EVT + CTB + Stromal + Hoffbauer + Endothelial + STB + heavyexp2021
+
+ddssva<-DESeq(ddssva)
+
+res <- results(ddssva,contrast=c("heavyexp2021","1","0"))
+res<-res[order(res$pvalue),]
+res
+summary(res)
+sum(res$padj < 0.05, na.rm=TRUE) #31
+
+res<-as.data.frame(res)
+
+res<-res%>%
+  rownames_to_column(var="ensembl_gene_id")%>%
+  mutate(ensembl_gene_id=str_remove(ensembl_gene_id,"\\..*"))%>%
+  left_join(gene_symbol_mapping)%>%
+  distinct()
+
+## volcano plot
+res_volcano_05<-res%>%
+  mutate(sig=factor(ifelse(padj < 0.05,"sig","not.sig")))%>%
+  drop_na(padj)%>%
+  ggplot(aes(x=log2FoldChange, y=-log10(padj), colour=sig,label=hgnc_symbol))+
+  geom_point(alpha=0.5) +
+  scale_color_manual(values=c("black", "red")) +
+  geom_text_repel(aes(label=ifelse(padj<0.05,as.character(hgnc_symbol),""),hjust=1,vjust=1),max.overlaps = 25)+
+  geom_hline(yintercept=-log10(0.05), linetype="dashed") +
+  geom_vline(xintercept=c(-1.5, 1.5), linetype="dashed") +
+  labs(x=bquote(~Log[2] ~ "fold change"),y=bquote(~-Log[10] ~ "Adj.P-value"), title="Pregnancy-wide DEGs adjusted for SVs, demographic variables and cell type")+
+  theme_bw()+
+  theme(panel.border = element_blank(),
+        axis.line = element_line(color = 'black',linewidth =1),
+        panel.grid.major = element_line(linewidth = (1.2)),
+        panel.grid.minor=element_line(),
+        axis.title=element_text(size=16,face="bold"),
+        axis.text=element_text(size=14),
+        legend.position = "none")
+
+pdf("lowRINrem/Plots/volcano_preg_demo_cell_SV_adj_05.pdf")
+res_volcano_05
+dev.off()
+
+saveRDS(res,"lowRINrem/output/res_preg_demo_cell_SVs_adj.rds")
+write.csv(res,"lowRINrem/output/SuppTable3.csv")
 ```
 
 ## panel DEG volcano plots
